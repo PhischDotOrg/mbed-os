@@ -246,7 +246,7 @@ typedef enum
   * @}
   */
 
-#if defined (USE_HAL_DRIVER)
+#if defined (USE_HAL_DRIVER) && !defined(HOSTBUILD)
  #include "stm32f4xx_hal.h"
 #endif /* USE_HAL_DRIVER */
 
